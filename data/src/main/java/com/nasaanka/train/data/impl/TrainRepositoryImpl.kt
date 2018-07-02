@@ -13,6 +13,5 @@ import javax.inject.Inject
 class TrainRepositoryImpl @Inject constructor(val firebaseService: FirebaseService) : TrainRepository {
 
     override fun saveTrainLocation(train: Train): Completable =
-            firebaseService.write(FirebaseService.TRAIN_LOCATION_TABLE, "TRAIN_1", train)
-
+            firebaseService.write(FirebaseService.TRAIN_LOCATION_TABLE, "TRAIN_1", train.copy(name = "Train 001"))
 }
