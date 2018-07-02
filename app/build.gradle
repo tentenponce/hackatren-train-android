@@ -37,6 +37,10 @@ dependencies {
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
+    /* google maps */
+    implementation "com.google.android.gms:play-services-maps:$project.ext.mapsVersion"
+    implementation "com.google.android.gms:play-services-location:$project.ext.mapsVersion"
+
     /* dagger */
     implementation "com.google.dagger:dagger:$project.ext.daggerVersion"
     compileOnly "org.glassfish:javax.annotation:$project.ext.annotationVersion"

@@ -1,13 +1,13 @@
 package com.nasaanka.train.domain.repository
 
-import com.nasaanka.train.domain.model.User
+import com.nasaanka.train.domain.model.Train
 import io.reactivex.Completable
 
 /**
  *
  * Created by Exequiel Egbert V. Ponce on 6/24/2018.
  */
-interface UserRepository {
+interface TrainRepository {
 
-    fun saveUserLocation(user: User): Completable
+    fun saveTrainLocation(train: Train): Completable
 }
