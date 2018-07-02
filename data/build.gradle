@@ -1,0 +1,27 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion project.ext.compileSdkVersion
+    buildToolsVersion project.ext.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion project.ext.minSdkVersion
+        targetSdkVersion project.ext.targetSdkVersion
+    }
+}
+
+dependencies {
+    compile project(path: ':domain')
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    implementation "javax.inject:javax.inject:$project.ext.javaxInjectVersion"
+
+    implementation "io.reactivex.rxjava2:rxjava:$project.ext.rxJavaVersion"
+
+    /* firebase */
+    implementation "com.google.firebase:firebase-database:$project.ext.firebaseVersion"
+}

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">hackatren-train-android</string>
+
+    <!--forms-->
+    <string name="form_running">Running</string>
+    <string name="form_broken">Broken</string>
+</resources>
